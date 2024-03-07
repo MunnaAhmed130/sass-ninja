@@ -9,38 +9,37 @@
 // colors
 
 // components - button, card, navbar
-@import "./components/card";
+@import "components/card";
 
 // utilities - margin, padding, opacity
 
-h1 {
-  font-size: 4rem;
-  color: $primary;
-  margin-bottom: $base-margin;
-}
+// Demo
 
-button {
-  color: $primary;
-  // color: white;
+// h1 {
+//   font-size: 4rem;
+//   color: $primary;
+//   margin-bottom: $base-margin;
+// }
 
-  border: none;
-  // background-color: $primary;
-  display: block;
-  border-radius: $base-border-radius;
-  padding: $base-padding;
-  font-size: 1.25rem;
-}
+// button {
+//   color: $primary;
+//   border: none;
+//   display: block;
+//   border-radius: $base-border-radius;
+//   padding: $base-padding;
+//   font-size: 1.25rem;
+// }
 
-.error {
-  color: $error;
-  margin: $base-margin;
-  border: $base-border-thickness solid $error;
-  padding: $base-padding;
-}
+// .error {
+//   color: $error;
+//   margin: $base-margin;
+//   border: $base-border-thickness solid $error;
+//   padding: $base-padding;
+// }
 
-.notification {
-  color: $secondary;
-  margin: $base-margin;
-  border: $base-border-thickness solid $secondary;
-  padding: $base-padding;
-}
+// .notification {
+//   color: $secondary;
+//   margin: $base-margin;
+//   border: $base-border-thickness solid $secondary;
+//   padding: $base-padding;
+// }
