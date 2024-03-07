@@ -1,19 +1,35 @@
+@use "sass:math";
+
 .card {
   display: block;
   padding: $base-padding;
   border: $base-border-thickness solid $base-border-color;
   box-shadow: $base-box-shadow;
+  // border-radius: calc($base-border-radius / 4);
+
+  border-radius: math.div($base-border-radius, 4);
 
   .card-title {
-    font-size: $base-font-size;
+    // font-size: $base-font-size;
+    font-size: $fs-lg;
     padding-bottom: $base-padding;
     font-weight: bold;
   }
 
   .card-body {
     font-size: $base-font-size;
+
     a {
       text-decoration: underline;
     }
   }
 }
+
+// debug
+
+@debug "hello";
+@debug math.div($base-border-radius, 4);
+@debug math.floor(2.5);
+@debug math.ceil(2.5);
+@debug math.round(2.5);
+@debug math.max(1, 5px, 9);
