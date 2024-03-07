@@ -7,23 +7,25 @@
     background-color: $val;
   }
 
-  @for $i from 1 through 9 {
-    // light variation
-    .text-#{$key}-light-#{$i} {
-      color: mix(white, $val, $i * 10%);
-    }
+  @if ($key != "black" and $key != "white") {
+    @for $i from 1 through 9 {
+      // light variation
+      .text-#{$key}-light-#{$i} {
+        color: mix(white, $val, $i * 10%);
+      }
 
-    .bg-#{$key}-light-#{$i} {
-      background-color: mix(white, $val, $i * 10%);
-    }
+      .bg-#{$key}-light-#{$i} {
+        background-color: mix(white, $val, $i * 10%);
+      }
 
-    // dark variation
-    .text-#{$key}-dark-#{$i} {
-      color: mix(black, $val, $i * 10%);
-    }
+      // dark variation
+      .text-#{$key}-dark-#{$i} {
+        color: mix(black, $val, $i * 10%);
+      }
 
-    .bg-#{$key}-dark-#{$i} {
-      background-color: mix(black, $val, $i * 10%);
+      .bg-#{$key}-dark-#{$i} {
+        background-color: mix(black, $val, $i * 10%);
+      }
     }
   }
 }
@@ -35,3 +37,15 @@ span {
   padding: 0.4rem 0.7rem;
   // color: #e6e6e6;
 }
+
+//  small piece of code to test @if @else
+
+// @if (10<5) {
+//   .test {
+//     color: black;
+//   }
+// } @else {
+//   .test-else {
+//     color: white;
+//   }
+// }
