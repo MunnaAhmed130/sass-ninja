@@ -3,19 +3,45 @@
     color: $val;
   }
 
+  .text-hover-#{$key} {
+    &:hover {
+      color: $val;
+    }
+  }
+
   .bg-#{$key} {
     background-color: $val;
+    &:hover {
+      background-color: mix(white, $val, 20%);
+    }
   }
 
   @if ($key != "black" and $key != "white") {
     @for $i from 1 through 9 {
       // light variation
+
       .text-#{$key}-light-#{$i} {
         color: mix(white, $val, $i * 10%);
       }
 
+      .text-hover-#{$key}-light-#{$i} {
+        &:hover {
+          background-color: mix(white, $val, $i * 10%);
+        }
+      }
+
       .bg-#{$key}-light-#{$i} {
         background-color: mix(white, $val, $i * 10%);
+
+        &:hover {
+          background-color: mix(black, $val, $i * 10%);
+        }
+      }
+
+      .bg-hover-#{$key}-light-#{$i} {
+        &:hover {
+          background-color: mix(white, $val, $i * 10%);
+        }
       }
 
       // dark variation
@@ -23,8 +49,20 @@
         color: mix(black, $val, $i * 10%);
       }
 
+      .text-hover-#{$key}-dark-#{$i} {
+        &:hover {
+          color: mix(black, $val, $i * 10%);
+        }
+      }
+
       .bg-#{$key}-dark-#{$i} {
         background-color: mix(black, $val, $i * 10%);
+      }
+
+      .bg-hover-#{$key}-dark-#{$i} {
+        &:hover {
+          background-color: mix(white, $val, $i * 10%);
+        }
       }
     }
   }
@@ -32,7 +70,8 @@
 
 // @debug mix(white, black, 90);
 
-span {
+span,
+button {
   display: inline;
   padding: 0.4rem 0.7rem;
   // color: #e6e6e6;
