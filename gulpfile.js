@@ -1,5 +1,5 @@
 const { src, dest, watch, series } = require("gulp");
-// const cleanCSS = require("gulp-clean-css");
+const cleanCSS = require("gulp-clean-css");
 const sass = require("gulp-sass")(require("sass"));
 
 function buildStyles() {
@@ -16,5 +16,6 @@ function buildWatch() {
 }
 
 exports.default = series(buildStyles, buildWatch);
+
 // exports.buildStyles = buildStyles;
 // exports.buildWatch = buildWatch;
