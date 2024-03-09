@@ -55,8 +55,8 @@ $base-border-color: #ddd;
 $base-box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
 
 // font size
-$base-font-size: 1rem;
-$fs-sm: $base-font-size * 0.75;
-$fs-lg: $base-font-size * 1.5;
-$fs-xl: $base-font-size * 2;
-$fs-xxl: $base-font-size * 3;
+$fs-base: 1rem;
+$fs-sm: $fs-base * 0.75;
+$fs-lg: $fs-base * 1.5;
+$fs-xl: $fs-base * 2;
+$fs-xxl: $fs-base * 3;
