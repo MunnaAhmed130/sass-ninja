@@ -11,6 +11,9 @@
 
   .bg-#{$key} {
     background-color: $val;
+  }
+
+  .bg-hover-#{$key} {
     &:hover {
       background-color: mix(white, $val, 20%);
     }
@@ -32,10 +35,6 @@
 
       .bg-#{$key}-light-#{$i} {
         background-color: mix(white, $val, $i * 10%);
-
-        &:hover {
-          background-color: mix(black, $val, $i * 10%);
-        }
       }
 
       .bg-hover-#{$key}-light-#{$i} {
@@ -61,7 +60,7 @@
 
       .bg-hover-#{$key}-dark-#{$i} {
         &:hover {
-          background-color: mix(white, $val, $i * 10%);
+          background-color: mix(black, $val, $i * 10%);
         }
       }
     }
@@ -70,8 +69,7 @@
 
 // @debug mix(white, black, 90);
 
-span,
-button {
+span {
   display: inline;
   padding: 0.4rem 0.7rem;
   // color: #e6e6e6;
