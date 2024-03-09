@@ -1,0 +1,10 @@
+// @debug complement(blue);
+// @debug lighten(blue, 4);
+// @debug lighten(blue, 4%);
+// @debug lighten(blue, 40%);
+
+@function light-comp($color) {
+  $compliment: complement($color);
+  $light-compliment: lighten($compliment, 4);
+  @return $light-compliment;
+}
