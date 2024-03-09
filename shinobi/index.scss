@@ -1,4 +1,4 @@
-// order of import matters
+// order of @import matters
 
 // variables & functions
 @import "variables";
@@ -11,6 +11,7 @@
 
 // components - button, card, navbar
 @import "components/card";
+@import "components/button";
 
 // utilities - margin, padding, opacity
 
