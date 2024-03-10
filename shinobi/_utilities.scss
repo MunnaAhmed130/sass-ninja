@@ -13,6 +13,30 @@ $utilities: (
     ),
   ),
 
+  "padding-block": (
+    "prefix": "py",
+    "values": (
+      "0": 0,
+      "1": $base-padding,
+      "2": $base-padding * 2,
+      "3": $base-padding * 4,
+      "4": $base-padding * 6,
+      "5": $base-padding * 8,
+    ),
+  ),
+
+  "padding-inline": (
+    "prefix": "px",
+    "values": (
+      "0": 0,
+      "1": $base-padding,
+      "2": $base-padding * 2,
+      "3": $base-padding * 4,
+      "4": $base-padding * 6,
+      "5": $base-padding * 8,
+    ),
+  ),
+
   "padding-top": (
     "prefix": "pt",
     "values": (
@@ -70,6 +94,30 @@ $utilities: (
       "3": $base-margin * 4,
       "4": $base-margin * 6,
       "5": $base-margin * 8,
+    ),
+  ),
+
+  "margin-block": (
+    "prefix": "my",
+    "values": (
+      "0": 0,
+      "1": $base-padding,
+      "2": $base-padding * 2,
+      "3": $base-padding * 4,
+      "4": $base-padding * 6,
+      "5": $base-padding * 8,
+    ),
+  ),
+
+  "margin-inline": (
+    "prefix": "mx",
+    "values": (
+      "0": 0,
+      "1": $base-padding,
+      "2": $base-padding * 2,
+      "3": $base-padding * 4,
+      "4": $base-padding * 6,
+      "5": $base-padding * 8,
     ),
   ),
 
@@ -152,10 +200,11 @@ $utilities: (
   ),
 
   "display": (
-    "prefix": "d",
+    "prefix": "display",
     "values": (
       "none": none,
       "block": block,
+      "grid": grid,
       "flex": flex,
       "inline": inline,
       "inline-block": inline-block,
@@ -163,7 +212,7 @@ $utilities: (
   ),
 
   "font-size": (
-    "prefix": "fs",
+    "prefix": "text",
     "values": (
       "sm": $fs-sm,
       "md": $fs-base,
