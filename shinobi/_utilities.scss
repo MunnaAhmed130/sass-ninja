@@ -199,29 +199,31 @@ $utilities: (
     ),
   ),
 
-  "display": (
-    "prefix": "display",
-    "values": (
-      "none": none,
-      "block": block,
-      "grid": grid,
-      "flex": flex,
-      "inline": inline,
-      "inline-block": inline-block,
+  // "display": (
+  //   "prefix": "display",
+  //   "values": (
+  //     "none": none,
+  //     "block": block,
+  //     "grid": grid,
+  //     "flex": flex,
+  //     "inline": inline,
+  //     "inline-block": inline-block,
+  //   ),
+  // ),
+  "font-size":
+    (
+      "prefix": "text",
+      "values": (
+        "sm": $fs-sm,
+        "md": $fs-base,
+        "lg": $fs-lg,
+        "xl": $fs-xl,
+        "xxl": $fs-xxl,
+      ),
     ),
-  ),
-
-  "font-size": (
-    "prefix": "text",
-    "values": (
-      "sm": $fs-sm,
-      "md": $fs-base,
-      "lg": $fs-lg,
-      "xl": $fs-xl,
-      "xxl": $fs-xxl,
-    ),
-  ),
 );
+
+$display: none, block, grid, flex, inline, inline-block;
 
 // @debug math.div($base-border-radius, 4);
 // @debug calc($base-border-radius / 4);
@@ -240,5 +242,11 @@ $utilities: (
         #{$property}: $v;
       }
     }
+  }
+}
+
+@each $val in $display {
+  .#{$val} {
+    display: $val;
   }
 }
