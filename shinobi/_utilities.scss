@@ -186,6 +186,17 @@ $utilities: (
     ),
   ),
 
+  "border-width": (
+    "prefix": "border",
+    "values": (
+      "default": 1px,
+      "0": 0px,
+      "2": 2px,
+      "3": 4px,
+      "4": 8px,
+    ),
+  ),
+
   "border-radius": (
     "prefix": "br",
     "values": (

@@ -1,6 +1,14 @@
+.border-transparent {
+  border-color: transparent;
+}
+
 @each $key, $val in $colors {
   .text-#{$key} {
     color: $val;
+  }
+
+  .border-#{$key} {
+    border-color: $val;
   }
 
   .text-hover-#{$key} {
