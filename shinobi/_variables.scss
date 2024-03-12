@@ -1,13 +1,13 @@
 // @use "sass:map";
 
 // theme colors
-$primary: #3264e1;
-$secondary: #44a70f;
-$error: #ee1a1a;
-$info: #ff9500;
+$primary: #3264e1 !default;
+$secondary: #44a70f !default;
+$error: #ee1a1a !default;
+$info: #ff9500 !default;
 
-$dark: black;
-$light: white;
+$dark: black !default;
+$light: white !default;
 
 // color palette
 
@@ -43,20 +43,20 @@ $colors: (
 // );
 
 // spacing
-$base-padding: 0.75rem;
-$base-margin: 0.75rem;
+$base-padding: 0.75rem !default;
+$base-margin: 0.75rem !default;
 
 // borders
-$base-border-thickness: 1px;
-$base-border-radius: 20px;
-$base-border-color: #ddd;
+$base-border-thickness: 1px !default;
+$base-border-radius: 20px !default;
+$base-border-color: #ddd !default;
 
 // box-shadow
-$base-box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+$base-box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1) !default;
 
 // font size
-$fs-base: 1rem;
-$fs-sm: $fs-base * 0.75;
-$fs-lg: $fs-base * 1.5;
-$fs-xl: $fs-base * 2;
-$fs-xxl: $fs-base * 3;
+$fs-base: 1rem !default;
+$fs-sm: $fs-base * 0.75 !default;
+$fs-lg: $fs-base * 1.5 !default;
+$fs-xl: $fs-base * 2 !default;
+$fs-xxl: $fs-base * 3 !default;
